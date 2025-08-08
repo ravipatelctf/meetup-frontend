@@ -3,7 +3,7 @@ import Events from "./pages/Events";
 
 const getEventsData = async () => {
     try {
-        const response = await fetch(`http://localhost:3000/events`, {
+        const response = await fetch(`https://meetup-backend-peach.vercel.app/events`, {
             method: "GET",
         });
        
