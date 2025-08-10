@@ -1,6 +1,9 @@
 
 import Events from "./pages/Events";
 
+// vercel url: https://meetup-backend-peach.vercel.app/events
+// locahost url: http://localhost:3000/events
+
 const getEventsData = async () => {
     try {
         const response = await fetch(`https://meetup-backend-peach.vercel.app/events`, {
