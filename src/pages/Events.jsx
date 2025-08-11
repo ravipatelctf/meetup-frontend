@@ -26,7 +26,7 @@ const Events = () => {
         <>
             {/* <Header /> */}
             <header>
-                <nav className="container nav d-flex justify-content-between align-items-center py-2">
+                <nav className="container nav d-flex justify-content-between align-items-center p-2">
                     <div>
                         <Link to="/" className="navbar-brand fs-1 text-danger fw-bold">Meetup</Link>
                     </div>
@@ -53,9 +53,10 @@ const Events = () => {
                         onChange={(e) => setEventType(e.target.value)}
                         className="p-2"
                     >
-                        <option value="Both">Select Event Type</option>
+                        <option value="Both" disabled>Select Event Type</option>
                         <option value="Online">Online</option>
                         <option value="Offline">Offline</option>
+                        <option value="Both">Both</option>
                     </select>
                 </div>
                 <div className="container py-4">
@@ -70,7 +71,9 @@ const Events = () => {
                                     >
                                     <img 
                                         src={eventData.eventImageUrl} alt={eventData.eventImageAlt} 
-                                        className="img-fluid"    
+                                        className="img-fluid"
+                                        width={600}
+                                        height={400}    
                                     />
                                     <div className="card-body">
                                         <p className="card-text">{eventData.eventStartDate}</p>

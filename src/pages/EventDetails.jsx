@@ -10,7 +10,7 @@ const EventDetails = () => {
     return (
         <>
             <header>
-                <nav className="container nav d-flex justify-content-between align-items-center py-2">
+                <nav className="container nav d-flex justify-content-between align-items-center p-2">
                     <div>
                         <Link to="/" className="navbar-brand fs-1 text-danger fw-bold">Meetup</Link>
                     </div>
@@ -74,7 +74,7 @@ const EventDetails = () => {
                                     <div className="card text-center">
                                         <img 
                                             src={speaker.profilePicURL} alt={speaker.profilePicAlt} 
-                                            className="img-fluid rounded-circle p-5"    
+                                            className="img-fluid rounded-circle p-5"
                                         />
                                         <div className="card-body">
                                             <p className="card-title fw-bold">
